@@ -6,6 +6,7 @@ int operations(int a);
 void operations(int *a,int *b); //pass by pointer
 //void operations(int &a,int &b); //pass by reference
 void operations(int &a,int &b,int z); //pass by reference
+
 int main()
 {
     cout<<"Enter the number:";
@@ -19,6 +20,7 @@ int main()
    // operations(x,y); //will cause error with function overloading
     operations(x,y,z); //pass by reference
     cout<<"\nPassing by referecne: "<<x<<" "<<y;
+    cout<<"\nUsing Default"<<
 }
 void operations(int &a,int &b,int z)
 {
